@@ -17,3 +17,4 @@ You can also use the scripts that create the various elements of the database in
 (the scripts required to correctly create the database are marked, the other scripts are optional):
 
 
+![online store relational model](https://user-images.githubusercontent.com/109040476/178840094-94c205ed-9c9f-4a97-9d02-ac44d10c574e.png)
