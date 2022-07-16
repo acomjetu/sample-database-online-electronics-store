@@ -238,7 +238,7 @@ CREATE TABLE payment_details
                         PRIMARY KEY,
  order_id               INTEGER NOT NULL,
  amount                 NUMBER NOT NULL,
- provider               VARCHAR2(100) NULL,
+ provider               VARCHAR2(100) NOT NULL CONSTRAINT check_provider CHECK(provider IN ('PayPal','WildApricot Payments','Stripe','Bank of America')),
  payment_status         VARCHAR2(10) CONSTRAINT check_payment_status CHECK
                                      (payment_status IN ('PROCESSED', 'PENDING', 'FAILURE')),
  created_at             TIMESTAMP,
