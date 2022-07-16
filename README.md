@@ -13,8 +13,7 @@ DIRECTIONS FOR USE
 
 To create the database, log in as a user with administrator privileges and then run the main script "online_store.sql"
 
-You can also use the scripts that create the various elements of the database in the correct order indicated below
-(the scripts required to correctly create the database are marked, the other scripts are optional):
+You can also use the scripts that create the various elements of the database in the correct order indicated below:
 
 sequences.sql > tables.sql > inserts.sql
 
