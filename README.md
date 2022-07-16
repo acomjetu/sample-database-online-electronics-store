@@ -3,7 +3,7 @@
 Sample database of a fictional online electronics store including most of the database objects such as 
 tables, views, sequences, indexes, triggers, functions and procedures. 
 
-Database: ORACLE
+Target Database: ORACLE
 
 It is a good tool for learning and using the Oracle database and SQL language.
 The tables are filled with random, generated data of various types, giving ample room for using various types of calculations and more or less advanced SQL queries.
