@@ -18,3 +18,6 @@ You can also use the scripts that create the various elements of the database in
 
 sequences.sql > tables.sql > inserts.sql
 
+Database Relational Model:
+
+![online_store_relational_diagram1](https://user-images.githubusercontent.com/109040476/179369307-3cc76716-3227-4435-9b8b-60651d3e2727.png)
