@@ -139,7 +139,7 @@ CREATE TABLE store_users
 CREATE TABLE product_categories
 (
  category_id    INTEGER PRIMARY KEY,
- category_name  VARCHAR2(80)
+ category_name  VARCHAR2(80) NOT NULL
 );
 
 /* A table containing the products that the store sells */
@@ -149,7 +149,7 @@ CREATE TABLE product
  product_id         INTEGER DEFAULT seq_product_product_id.nextval PRIMARY KEY,
  product_name       VARCHAR2(500) NOT NULL,
  category_id        INTEGER NOT NULL, 
- sku                VARCHAR2(20) NULL,
+ sku                VARCHAR2(20) NOT NULL,
  price              NUMBER NOT NULL,
  discount_id        INTEGER,
  created_at         TIMESTAMP,
@@ -205,7 +205,7 @@ CREATE TABLE order_details
 (
  order_details_id   INTEGER DEFAULT seq_order_details_order_detail_id.nextval PRIMARY KEY,
  user_id            INTEGER NOT NULL,
- total              NUMBER,
+ total              NUMBER NOT NULL,
  payment_id         INTEGER NOT NULL,
  shipping_method    VARCHAR2(6) NOT NULL CONSTRAINT check_shipping_method CHECK(shipping_method IN ('DPD', 'DHL', 'UPS', 'Inpost')),
  delivery_adress_id INTEGER NOT NULL,
@@ -269,14 +269,14 @@ CREATE TABLE employees
  middle_name    VARCHAR2(80) NULL,
  last_name      VARCHAR2(80) NOT NULL,
  date_of_birth  DATE NOT NULL,
- department_id  INTEGER NULL,
+ department_id  INTEGER NOT NULL,
  hire_date      DATE NOT NULL,
- salary         NUMBER,
+ salary         NUMBER NOT NULL,
  phone_number   VARCHAR2(30) UNIQUE NULL 
                                     CONSTRAINT check_phone_number_employees 
                                     CHECK (REGEXP_LIKE(phone_number, '^\d{3}.\d{3}.\d{4}$')),
  email          VARCHAR2(80) UNIQUE NULL,
- ssn_number     VARCHAR2(20),
+ ssn_number     VARCHAR2(20) NOT NULL,
  manager_id     INTEGER
 );
 
