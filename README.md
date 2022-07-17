@@ -1,4 +1,4 @@
-# Sample Database Project - Online Electronics Store
+# Database Project - Online Electronics Store
 
 Sample database of a fictional online electronics store including most of the database objects such as 
 tables, views, sequences, indexes, triggers, functions and procedures. 
